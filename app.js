@@ -19,12 +19,13 @@ let catchPhrase = [];
 
 headDropdown.addEventListener('change', () => {
     // get the value of the head dropdown
-
+    let headChoice = headDropdown.options[headDropdown.selectIndex].value;
     // increment the head change count state
     headChange++;
     // update the dom for the head (use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
-
+    headEl.style.backgroundImage = `url("./assets/${headChoice}-head.png")`;
     // update the stats to show the new count (call displayStats() to do this work)
+    console.log(`.ass./assets/${headChoice}-head.png`);
 });
 
 
@@ -34,7 +35,7 @@ middleDropdown.addEventListener('change', () => {
     // increment the middle change count state
     middleChange++;
     // update the dom for the middle (NOTE: use style.backgroundImage on the middleEl div instead of trying to set the .src -- it's NOT an img tag!)
-
+    middleEl.style.backgroundImage = `url("./assets/${middleChoice}-middle.png")`;
     // update the stats to show the new count (call displayStats() to do this work)
 });
 
@@ -45,15 +46,15 @@ bottomDropdown.addEventListener('change', () => {
     // increment the bottom change count state
     bottomChange++;
     // update the dom for the bottom (NOTE use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
-
+    bottomEl.style.backgroundImage = `url("./assets/${bottomChoice}-bottom.png")`;
     // update the stats to show the new count (call displayStats() to do this work)
 });
 
 catchphraseButton.addEventListener('click', () => {
     // get the value of the catchphrase input
-    const 
+    const newCatchphrase = catchphraseInput.value;
     // push the new catchphrase to the catchphrase array in state
-
+    let catchphrase;
     // clear out the form input's value so it's empty to the user
    
     // update the dom to show the new catchphrases (refactor to/call displayCatchphrases to do this work)
