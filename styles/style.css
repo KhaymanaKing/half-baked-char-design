@@ -60,7 +60,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -138,4 +138,8 @@ main {
     font-size: 2rem;
     font-family: cursive;
     text-align: center;
+}
+.catchPhraseList {
+    background-color: rgb(128, 233, 128);
+    text-shadow: 5px;
 }
