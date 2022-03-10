@@ -84,7 +84,7 @@ function displayCatchphrases() {
         pTag.classList.add('catchPhraseList');
         // and append that HTML element to the cleared-out DOM 
         catchphrasesEl.append(pTag);
-        console.log(catchPhrases);
+        // console.log(catchPhrases);
     }
     
     
