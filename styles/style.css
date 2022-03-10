@@ -139,3 +139,7 @@ main {
     font-family: cursive;
     text-align: center;
 }
+.catchPhraseList {
+    background-color: rgb(128, 233, 128);
+    text-shadow: 5px;
+}
